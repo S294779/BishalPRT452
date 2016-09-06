@@ -30,6 +30,8 @@ namespace AnagramsPT452
                 //Take words from user to check anagrams
                 Console.WriteLine("Enter word" + " " + z++);
                 words[i] = Console.ReadLine();
+                char[] d = {' ', '\t' };
+                words[i] = words[i].Trim(d);
             }
             List<string> result = new List<string>();
             bool match = false;
